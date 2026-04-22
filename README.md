@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Vixonics Website
+
+Marketing website for Vixonics, built with Next.js App Router.
+
+## Environment Variables
+
+Create `.env.local` in the project root:
+
+```bash
+RESEND_API_KEY=re_xxxxxxxxx
+RESEND_FROM="Vixonics Website <onboarding@resend.dev>"
+CONTACT_TO_EMAIL=hello@vixonics.com
+NEXT_PUBLIC_WHATSAPP_NUMBER=923000000000
+```
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Contact Form Email
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The contact form posts to `app/api/contact/route.js` and sends email through Resend.
 
-## Learn More
+- `RESEND_API_KEY` is required.
+- Use a verified sender in `RESEND_FROM` for production.
+- `CONTACT_TO_EMAIL` controls where new inquiries are delivered.
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deploy on Vercel or any Node-compatible platform supporting Next.js 16.

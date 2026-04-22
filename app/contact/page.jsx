@@ -235,7 +235,7 @@ export default function Contact() {
                     type="tel"
                     value={formData.phone}
                     onChange={(e) => handleChange('phone', e.target.value)}
-                    placeholder="+92 300 0000000"
+                    placeholder="+92 302 4127316"
                     className={styles.input}
                     style={inputStyle}
                   />

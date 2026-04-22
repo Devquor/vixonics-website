@@ -1,0 +1,14 @@
+.section {
+  padding: 80px 0;
+}
+
+.stack {
+  display: grid;
+  gap: 18px;
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 50px 0;
+  }
+}

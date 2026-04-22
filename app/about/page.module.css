@@ -1,0 +1,120 @@
+.section {
+  padding: 100px 0;
+}
+
+.secondary {
+  background: var(--bg-secondary);
+}
+
+.storyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.timelineRow {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.timelineDot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.timelineYear {
+  font-family: var(--font-syne), Syne, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.missionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.locationCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+@media (max-width: 1023px) {
+  .storyGrid {
+    gap: 24px;
+  }
+
+  .valuesGrid,
+  .teamGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 50px 0;
+  }
+
+  .storyGrid,
+  .missionGrid,
+  .valuesGrid,
+  .teamGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .timelineRow {
+    gap: 12px;
+  }
+
+  .timelineDot {
+    width: 10px;
+    height: 10px;
+    margin-top: 6px;
+  }
+
+  .timelineRow p {
+    font-size: 14px !important;
+  }
+
+  .timelineYear {
+    font-size: 16px;
+  }
+
+  .locationCard {
+    padding: 24px;
+    align-items: flex-start;
+  }
+}

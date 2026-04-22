@@ -1,0 +1,45 @@
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  cursor: pointer;
+  will-change: transform;
+  width: 100%;
+  max-width: 100%;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  color: var(--accent);
+}
+
+.title {
+  font-family: var(--font-syne), Syne, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-white);
+  margin: 16px 0 10px;
+}
+
+.desc {
+  font-family: var(--font-dm-sans), DM Sans, sans-serif;
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.link {
+  display: block;
+  color: var(--accent);
+  font-size: 14px;
+  margin-top: 16px;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .card {
+    padding: 20px;
+  }
+}

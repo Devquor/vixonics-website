@@ -1,0 +1,6 @@
+<svg width="480" height="480" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Team member portrait">
+  <rect width="480" height="480" fill="#1e1b4b"/>
+  <circle cx="240" cy="192" r="86" fill="#f2c08a"/>
+  <rect x="118" y="295" width="244" height="149" rx="78" fill="#0b1222"/>
+  <path d="M154 166c8-55 50-92 86-92 39 0 81 37 86 92-14-14-35-24-86-24-50 0-71 10-86 24z" fill="#111827"/>
+</svg>

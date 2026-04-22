@@ -1,0 +1,11 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Next.js featured article">
+  <rect width="1200" height="800" fill="#102340"/>
+  <rect x="120" y="140" width="960" height="520" rx="28" fill="#0f172a"/>
+  <rect x="180" y="210" width="420" height="34" rx="17" fill="#64748b"/>
+  <rect x="180" y="274" width="780" height="18" rx="9" fill="#475569"/>
+  <rect x="180" y="310" width="650" height="18" rx="9" fill="#475569"/>
+  <rect x="180" y="366" width="300" height="180" rx="18" fill="#1e293b"/>
+  <rect x="510" y="366" width="450" height="180" rx="18" fill="#1e293b"/>
+  <circle cx="900" cy="220" r="62" fill="#2563eb" opacity="0.85"/>
+  <text x="900" y="230" text-anchor="middle" fill="#ffffff" font-size="34" font-family="Arial" font-weight="700">N</text>
+</svg>

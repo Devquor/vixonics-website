@@ -1,0 +1,168 @@
+.footer {
+  background: #070c18;
+  padding: 80px 0 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 48px;
+}
+
+.heading {
+  font-family: var(--font-syne), Syne, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.link {
+  display: block;
+  color: var(--text-muted);
+  font-size: 14px;
+  padding: 6px 0;
+}
+
+.brandRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.logoSquare {
+  width: 32px;
+  height: 32px;
+  background: var(--gradient);
+  border-radius: 6px;
+}
+
+.brandTitle {
+  font-family: var(--font-syne), Syne, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-white);
+  letter-spacing: 1px;
+}
+
+.brandText {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.socials {
+  display: flex;
+  gap: 16px;
+}
+
+.socialLink {
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  min-width: 44px;
+  min-height: 44px;
+  justify-content: center;
+}
+
+.newsLabel {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.newsForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  color: var(--text-white);
+  font-size: 14px;
+  font-family: var(--font-dm-sans), DM Sans, sans-serif;
+  outline: none;
+  min-height: 44px;
+}
+
+.subscribe {
+  width: 100%;
+  background: var(--accent);
+  color: var(--text-white);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  font-size: 14px;
+  font-family: var(--font-dm-sans), DM Sans, sans-serif;
+  font-weight: 600;
+  min-height: 44px;
+}
+
+.bottom {
+  border-top: 1px solid var(--border);
+  margin-top: 60px;
+  padding: 24px 0;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1023px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 50px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .heading {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .link {
+    font-size: 14px;
+    padding: 8px 0;
+  }
+
+  .brandText {
+    margin-bottom: 18px;
+  }
+
+  .socials {
+    gap: 10px;
+  }
+
+  .newsForm {
+    gap: 12px;
+  }
+
+  .bottom {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 36px;
+    padding: 18px 0;
+  }
+}

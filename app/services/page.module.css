@@ -1,0 +1,194 @@
+.serviceSection {
+  padding: 100px 0;
+}
+
+.altBg {
+  background: var(--bg-secondary);
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.serviceTitle {
+  font-family: var(--font-syne), Syne, sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--text-white);
+  margin-bottom: 20px;
+}
+
+.serviceList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.serviceList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+.stackRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.stackRow span {
+  font-size: 12px;
+}
+
+.visual {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.processSection {
+  padding: 100px 0;
+  background: var(--bg-secondary);
+}
+
+.processRow {
+  display: flex;
+  gap: 0;
+  padding-bottom: 8px;
+}
+
+.processStep {
+  flex: 1;
+  min-width: 140px;
+  text-align: center;
+  position: relative;
+}
+
+.faqSection {
+  padding: 100px 0;
+}
+
+.faqWrap {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  border-bottom: 1px solid var(--border);
+}
+
+.faqButton {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-white);
+  font-family: var(--font-syne), Syne, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: left;
+  gap: 16px;
+}
+
+.faqText {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.8;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 1023px) {
+  .serviceGrid {
+    gap: 24px;
+  }
+
+  .serviceTitle {
+    font-size: 30px;
+  }
+
+  .faqButton {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .serviceSection,
+  .processSection,
+  .faqSection {
+    padding: 50px 0;
+  }
+
+  .serviceGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .serviceTitle {
+    font-size: 26px;
+  }
+
+  .serviceList li {
+    font-size: 14px;
+  }
+
+  .stackRow span {
+    font-size: 11px;
+  }
+
+  .visual {
+    aspect-ratio: 16 / 9;
+    order: 2;
+  }
+
+  .serviceText {
+    order: 1;
+  }
+
+  .processRow {
+    flex-direction: column;
+    gap: 16px;
+    overflow: visible;
+  }
+
+  .processStep {
+    min-width: 100%;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    align-items: start;
+    gap: 12px;
+  }
+
+  .processStepLine {
+    display: none;
+  }
+
+  .processStep > h4,
+  .processStep > p {
+    grid-column: 2;
+  }
+
+  .faqButton {
+    font-size: 14px;
+    padding: 16px 0;
+  }
+
+  .faqText {
+    font-size: 14px;
+    padding-bottom: 16px;
+  }
+}

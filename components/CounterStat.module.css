@@ -1,0 +1,24 @@
+.wrap {
+  text-align: center;
+}
+
+.number {
+  font-family: var(--font-jetbrains), JetBrains Mono, monospace;
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.label {
+  font-family: var(--font-dm-sans), DM Sans, sans-serif;
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+@media (max-width: 767px) {
+  .number {
+    font-size: 36px;
+  }
+}

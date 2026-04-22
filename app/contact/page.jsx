@@ -53,7 +53,7 @@ const infoCards = [
       </svg>
     ),
     title: 'Phone',
-    value: '+92 300 0000000',
+    value: '+92 302 4127316',
   },
 ];
 
